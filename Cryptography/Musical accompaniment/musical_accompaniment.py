@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
+
+# Standard library imports
 from os.path import exists
-from requests import get
 from zipfile import ZipFile
+
+# Third-party library imports
+from requests import get    # pip install requests
 
 base_url = "https://codeby.games"
 path = "game_api/files/download"
@@ -55,6 +60,7 @@ def get_flag() -> str:
     if not exists("music.png"):
         unzip()
 
+    # TODO: Rewrite the dictionary using musical notation.
     mapping = {
         "do1":      'o',
         "do11":     'a',

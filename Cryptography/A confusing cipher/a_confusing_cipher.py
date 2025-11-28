@@ -1,8 +1,12 @@
-import re
+#!/usr/bin/env python3
 
+# Standard library imports
+import re
 from os.path import exists
-from requests import get    # pip install requests
 from zipfile import ZipFile
+
+# Third-party library imports
+from requests import get    # pip install requests
 
 base_url = "https://hackerlab.pro"
 path = "game_api/files/download"

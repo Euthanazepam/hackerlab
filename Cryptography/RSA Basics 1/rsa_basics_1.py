@@ -1,6 +1,10 @@
-import tarfile
+#!/usr/bin/env python3
 
+# Standard library imports
+import tarfile
 from os.path import exists
+
+# Third-party library imports
 from requests import get    # pip install requests
 
 base_url = "https://codeby.games"

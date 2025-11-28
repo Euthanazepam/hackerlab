@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
+
+# Standard library imports
 from os.path import exists
-from requests import get
 from zipfile import ZipFile
+
+# Third-party library imports
+from requests import get    # pip install requests
 
 base_url = "https://codeby.games"
 path = "game_api/files/download"
@@ -57,6 +62,7 @@ def get_flag() -> str:
     if not exists("task.png"):
         unzip()
 
+    # TODO: Find Unicode symbols of signal flags and add them to the dictionary.
     mapping = {
         48: '0', 49: '1', 50: '2', 51: '3', 52: '4', 53: '5',
         54: '6', 55: '7', 56: '8', 57: '9', 65: 'A', 66: 'B',

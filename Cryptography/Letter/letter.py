@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
+
+# Standard library imports
 from os.path import exists
-from requests import get    # pip install requests
 from zipfile import ZipFile
+
+# Third-party library imports
+from requests import get    # pip install requests
 
 base_url = "https://codeby.games"
 path = "game_api/files/download"

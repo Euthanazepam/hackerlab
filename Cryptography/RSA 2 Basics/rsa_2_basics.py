@@ -1,7 +1,12 @@
-from factordb.factordb import FactorDB  # pip install factordb-python
+#!/usr/bin/env python3
+
+# Standard library imports
 from os.path import exists
-from requests import get    # pip install requests
 from zipfile import ZipFile
+
+# Third-party library imports
+from factordb.factordb import FactorDB  # pip install factordb-python
+from requests import get    # pip install requests
 
 base_url = "https://codeby.games"
 path = "game_api/files/download"
